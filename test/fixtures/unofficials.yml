@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  homework: MyString
+  description: MyText
+  subject: MyString
+  assigned_by: MyString
+  assigned_in: 2017-04-13
+  assigned_for: 2017-04-13
+
+two:
+  homework: MyString
+  description: MyText
+  subject: MyString
+  assigned_by: MyString
+  assigned_in: 2017-04-13
+  assigned_for: 2017-04-13

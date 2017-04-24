@@ -1,0 +1,41 @@
+<%= form_for(@unofficial) do |f| %>
+  <% if @unofficial.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@unofficial.errors.count, "error") %> prohibited this homework from being saved:</h2>
+
+      <ul>
+      <% @unofficial.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :homework %><br>
+    <%= f.text_field :homework %>
+  </div>
+  <div class="field">
+    <%= f.label :description %><br>
+    <%= f.text_area :description %>
+  </div>
+  <div class="field">
+    <%= f.label :subject %><br>
+    <%= f.text_field :subject %>
+  </div>
+  <div class="field">
+    <%= f.label :assigned_by %><br>
+    <%= f.text_field :assigned_by %>
+  </div>
+  <div class="field">
+    <%= f.label :assigned_in %><br>
+    <%= f.date_select :assigned_in %>
+  </div>
+  <div class="field">
+    <%= f.label :assigned_for %><br>
+    <%= f.date_select :assigned_for %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

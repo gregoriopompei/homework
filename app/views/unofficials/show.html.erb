@@ -1,0 +1,32 @@
+<p>
+  <strong>Homework:</strong>
+  <%= @unofficial.homework %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @unofficial.description %>
+</p>
+
+<p>
+  <strong>Subject:</strong>
+  <%= @unofficial.subject %>
+</p>
+
+<p>
+  <strong>Assigned by:</strong>
+  <%= @unofficial.assigned_by %>
+</p>
+
+<p>
+  <strong>Assigned in:</strong>
+  <%= @unofficial.assigned_in %>
+</p>
+
+<p>
+  <strong>Assigned for:</strong>
+  <%= @unofficial.assigned_for %>
+</p>
+
+<%= link_to 'Edit', edit_unofficial_path(@unofficial) %> |
+<%= link_to 'Back', unofficials_path %>
